@@ -1,0 +1,540 @@
+/*-----------------basic css reset-----------------*/
+*,
+:after,
+:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+/*------------------- theme style ------------------*/
+html {
+    font-size: 100%;
+    min-height: 100%;
+    width: 100%;
+    font-family: segoe UI, segue UI, sans-serif;
+
+    /*-baggrund-*/
+    background-image: url('../images/baggrund_mobile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* ---------- page header and navigation -----------*/
+.topnav {
+    overflow: hidden;
+    margin: 10px 10px 0;
+}
+
+/*nav links styled*/
+.topnav a {
+    display: block;
+    color: #eec7ff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 10px;
+}
+
+/* logo excluderet. skyr logo til venstre, menu til højre */
+.topnav a:not(.active) {
+    float: right;
+    padding: 14px 16px;
+}
+
+.active {
+    float: left;
+    padding: 5px 0 0 5px;
+}
+
+.topnav a:hover {
+    color: #f049dd;
+}
+
+/*active class to highlight the current page*/
+.topnav a.active {
+    color: white;
+}
+
+/*logo*/
+.skyr_logo {
+    height: 30px;
+}
+
+/*burger*/
+.burger {
+    height: 20px;
+
+}
+
+/*hide burger*/
+.topnav .icon {
+    display: none;
+}
+
+
+/*--------------------------------- FORSIDE ----------------------------------*/
+/*------------------- body ody ody ------------------*/
+.forside_box {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*--------------------- drawings --------------------*/
+.forside_drawings {
+    text-align: center;
+}
+
+.big_skyr {
+    height: 230px;
+    margin: 20% 0 10%;
+}
+
+.cup {
+    height: 250px;
+    margin: 0 auto 5%;
+}
+
+
+/*----------------- forside buttons ----------------*/
+.forside_buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 10px 50px;
+}
+
+.forside_buttons a {
+    color: #0e0077;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    margin: 15px;
+    background-color: #ffffff;
+    box-shadow:
+        /* right, down, blur radius, how big shadow, color */
+        inset 0px 50px 60px #ffffff,
+        /* inner white up */
+        
+        inset 20px 0px 30px #f0f,
+        /* inner left magenta */
+        inset -20px 0px 30px #0ff;
+        /* inner right cyan */
+}
+
+
+/*--------------------------------- KONKURRENCE SIDE ----------------------------------*/
+/*----------------- konkurrence intro ----------------*/
+.konk_info {
+    color: white;
+    margin: 15% 5% 5%;
+}
+
+.konk_info h1 {
+    font-size: 300%;
+    font-weight: normal;
+    max-width: 300px;
+}
+
+.tre_skyr {
+    height: 110px;
+    position: absolute;
+    right: 10px;
+    margin-top: -20px;
+}
+
+.konk_info article {
+    margin: 120px 0 0;
+    font-size: 18px;
+}
+
+/*----------------- konkurrence skyr buttons ----------------*/
+.konk_buttons_box {
+    margin: 20px 30px 10px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.konk_buttons_box div {
+    color: white;
+    padding: 20px;
+    margin: 5px 0;
+    display: flex;
+}
+
+.skyr_type_1 {
+    height: 40px;
+    margin: 10px 0 0;
+}
+
+.skyr_type_2 {
+    height: 60px;
+}
+
+.skyr_type_3 {
+    height: 60px;
+}
+
+.skyr_form {
+    margin: 20px;
+}
+
+/*----------------- konkurrence email buttons ----------------*/
+.konk_email_box {
+    margin: 0 30px 50px;
+    color: white;
+}
+
+input[type=text] {
+    width: 60%;
+    padding: 8px 15px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: solid 1px #404040;
+}
+
+input[type=text]:focus {
+    outline-color: #ff53eb;
+}
+
+input[type=submit] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 10px 0 0;
+    background-color: #7ecef2;
+}
+
+input[type=submit]:focus {
+    outline-color: #ff53eb;
+}
+
+
+/*--------------------------------- HISTORIE SIDE ----------------------------------*/
+.historie {
+    color: white;
+    margin: 15% 0 0;
+}
+
+.historie_mobil {
+    margin: 5% 5% 10%;
+    font-weight: normal;
+    font-size: 250%;
+}
+
+.historie_comp {
+    display: none;
+}
+
+.islandskyr {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.historie article {
+    margin: 15% 8% 25%;
+}
+
+.historie p {
+    margin: -18px 0 0;
+}
+
+/*------------------------------- LEARN MORE SIDE -------------------------------*/
+.learn_more {
+    margin: 15% 5% 10%;
+    color: white;
+}
+
+.learn_more h1 {
+    font-size: 33px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.skyr_mobil {
+    height: 250px;
+    margin: 10% 10% 5%;
+}
+
+.skyr_comp {
+    display: none;
+}
+
+.learn_more p {
+    margin: 10% 0 15%;
+    font-size: 18px;
+}
+
+.nutrition_table {
+    background-color: rgba(170, 235, 255, 0.33);
+    color: #ffffff;
+    width: 80%;
+    margin: auto;
+    padding: 18px;
+    font-size: 18px;
+    max-width: 300px;
+}
+
+.nutrition_table_header {
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.92);
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.nutrition_table_td {
+    text-align: right;
+}
+
+/*-------------------------------- MEDIA QUERIES --------------------------------*/
+
+/*-mobil-*/
+@media screen and (max-width: 600px) {
+
+    /* HEADER */
+    /* hide nav links except for logo, show burger */
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    /* nav links vertical instead of horisontal */
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+
+/*-større end mobil-*/
+@media screen and (min-width: 600px) {
+
+    /* HEADER+BASIC */
+    skyr_logo {
+        height: 50px;
+    }
+
+    /* FORSIDE */
+    .forside_box {
+        flex-direction: row;
+    }
+
+    .forside_buttons {
+        margin: 20% 0 0 0;
+    }
+
+    /* LEARN-MORE */
+    .learn_more h1 {
+        font-size: 50px;
+    }
+
+    .skyr_mobil {
+        height: 350px;
+        margin: 10% 20% 5% 20%;
+    }
+
+    .learn_more p {
+        margin: 10% auto 15%;
+        font-size: 18px;
+        width: 80%;
+    }
+
+    /* HISTORIE */
+    .historie_mobil {
+        font-size: 50px;
+    }
+}
+
+/*-computer-*/
+@media screen and (min-width: 900px) {
+
+    /* BASIC */
+    html {
+        background-image: url('../images/baggrund_computer.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    /* FORSIDE */
+    .forside_box {
+        justify-content: space-around
+    }
+
+    .forside_buttons {
+        margin: 12% 0 5% -10%;
+        justify-content: space-around;
+    }
+
+    .big_skyr {
+        height: 280px;
+        margin: 20% 0 10%;
+    }
+
+    .cup {
+        height: 500px;
+        margin: 0 30px 0 50px;
+    }
+
+    /* KONKURRENCE */
+    .konk_flexbox {
+        display: flex;
+    }
+
+    .konk_info {
+        margin: 18% 0 0 10%;
+    }
+
+    .konk_info h1 {
+        font-size: 380%;
+        max-width: 1000px;
+    }
+
+    .tre_skyr {
+        height: 200px;
+        margin: -300px 950px 0 0;
+    }
+
+    .konk_info article {
+        max-width: 500px;
+        margin: 20px 0 0;
+    }
+
+    .konk_buttons_box {
+        margin: 150px 30px 10px 200px;
+    }
+
+    .konk_email_box {
+        margin: 350px 0 0 40px;
+    }
+
+    input[type=text] {
+        width: 100%;
+    }
+
+    input[type=submit] {
+        width: 50%;
+        padding: 12px 20px;
+    }
+
+    /* LEARN-MORE */
+    .learn_more {
+        margin: 5% 5% 10%;
+        display: flex;
+    }
+
+    .text_supremacy {
+        margin: 5% 0 0;
+        width: 450px;
+    }
+
+    .learn_more h1 {
+        font-size: 40px;
+    }
+
+    .learn_more p {
+        margin: 10% auto 15%;
+        font-size: 18px;
+        width: 70%;
+    }
+
+    .skyr_mobil {
+        display: none;
+    }
+
+    .skyr_comp {
+        display: block;
+        height: 400px;
+    }
+
+    /* HISTORIE */
+    .historie {
+        color: white;
+        margin: 5% 2% 0 5%;
+    }
+
+    .historie_flexbox {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .historie_mobil {
+        display: none;
+    }
+
+    .islandskyr {
+        height: 500px;
+    }
+
+    .historie_comp {
+        display: block;
+        margin: 5% 0 0;
+        font-size: 300%;
+        margin: -5px 0 10% 0;
+    }
+
+    .historie article {
+        margin: 0 8% 10% 0;
+    }
+
+    .historie p {
+        margin: -18px 0 0;
+    }
+}
+
+/*-bigger computer-*/
+@media screen and (min-width: 1200px) {
+
+    /* HISTORIE */
+    .historie {
+        color: white;
+        margin: 5% 2% 0 5%;
+    }
+
+    .historie_flexbox {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .historie_mobil {
+        display: none;
+    }
+
+    .islandskyr {
+        height: 650px;
+    }
+
+    .historie_comp {
+        display: block;
+        margin: 5% 0 0;
+        font-size: 300%;
+        margin: -5px 0 10% 0;
+    }
+
+    .historie article {
+        margin: 0 8% 10% 0;
+    }
+
+    .historie p {
+        margin: -18px 0 0;
+    }
+}
